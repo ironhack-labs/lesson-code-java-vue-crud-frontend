@@ -62,7 +62,6 @@ export const useProjectStore = defineStore("project", () => {
       this.project = await fetch(`${API_URL}/api/projects/${projectId}`).then(
         (response) => response.json()
       );
-      console.log(this.project);
     } catch (error) {
       console.log(error);
     }
